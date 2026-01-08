@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Dashboard</title>
+    <link rel="stylesheet" href="iot dashboard.css">
+
+</head>
+<body>
+    <header>
+        <h1>IoT Dashboard</h1>
+    </header>
+
+    <div class="container">
+        <div class="device-card">
+            <h3>Light</h3>
+            <p>Status: <span id="light-status">OFF</span></p>
+            <button class="on" onclick="document.getElementById('light-status').innerText='ON'">Turn ON</button>
+            <button class="off" onclick="document.getElementById('light-status').innerText='OFF'">Turn OFF</button>
+        </div>
+
+        <div class="device-card">
+            <h3>Fan</h3>
+            <p>Status: <span id="fan-status">OFF</span></p>
+            <button class="on" onclick="document.getElementById('fan-status').innerText='ON'">Turn ON</button>
+            <button class="off" onclick="document.getElementById('fan-status').innerText='OFF'">Turn OFF</button>
+        </div>
+
+        <div class="device-card">
+            <h3>Temperature Sensor</h3>
+            <p>Value: <span id="temp-value">25°C</span></p>
+        </div>
+
+        <div class="device-card">
+            <h3>Door</h3>
+            <p>Status: <span id="door-status">LOCKED</span></p>
+            <button class="on" onclick="document.getElementById('door-status').innerText='UNLOCKED'">Unlock</button>
+            <button class="off" onclick="document.getElementById('door-status').innerText='LOCKED'">Lock</button>
+        </div>
+    </div><br><br>
+    <a href="bin.html">check the bin</a>
+</body>
+</html>
